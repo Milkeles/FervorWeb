@@ -4,33 +4,54 @@ title: Documentation
 permalink: /docs/
 ---
 
-# Hello world!
+# Fervor Web
 [![Build Status](https://img.shields.io/github/actions/workflow/status/Milkeles/WebDesignClass/Deploy.yml)](https://github.com/Milkeles/WebDesignClass/actions)
 [![License: MIT](https://img.shields.io/github/license/Milkeles/WebDesignClass)](LICENSE)
 [![Issues](https://img.shields.io/github/issues/Milkeles/WebDesignClass)](https://github.com/Milkeles/WebDesignClass/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/Milkeles/WebDesignClass)](https://github.com/Milkeles/WebDesignClass/pulls)
 
-# To Do:
-- Branding (Vission & Vision, Values, Narrative, Motto)
-- Moodboard 
-
-#### Note to self: Bring laptop, git doesn't work on uni pc (or at least, I forgot how to make it work here without admin perms).
-(Can rebrand existing site if we want, but must reason about it.)
-
----
-
 ## Contents
-
-- Overview
-- Features
-- Technology Stack
+- Introduction
+- Pages
 - Installation and Setup
 - Documentation References
 - License
 
 ---
 
-## Overview
+## Introduction
+Fervor Web is a conceptual website for a small boutique web agency specializing in high-performance websites for small businesses. We build customer-centric websites focused on high performance, conversion rate, and SEO, all delivered quickly and maintained affordably through a straightforward subscription model.
+
+This repository is a class project for Web Design, built with Tailwind CSS and original photography.
+
+## Pages
+| Page | Description |
+|------|-------------|
+| Home | Hero section, value proposition, and call to action |
+| Services | Subscription tiers and what's included |
+| Work | Portfolio of example projects and case studies |
+| About | The agency's story, approach, and values |
+| Contact | Inquiry form and booking |
+
+## Installation and Setup
+```bash
+# Clone the repository
+git clone https://github.com/Milkeles/WebDesignClass.git
+cd WebDesignClass
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
 
 ## Documentation References
-[Vision and Scope]({{ site.baseurl }}/docs/vision-and-scope)
+- [Visual Style Guide](docs/visual-style-guide.md)
+- [Technical Design Document](docs/technical-design-doc.md)
+- [Configuration Management](docs/configuration-management-doc.md)
+
+*Note: Some documents typically found in a full-stack project are intentionally excluded due to the frontend-focused nature of the project, while others not usually versioned in a repository are included for class purposes.*
+
+## License
+[MIT](/LICENSE)
