@@ -10,12 +10,12 @@ permalink: /docs/
 [![Issues](https://img.shields.io/github/issues/Milkeles/WebDesignClass)](https://github.com/Milkeles/WebDesignClass/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/Milkeles/WebDesignClass)](https://github.com/Milkeles/WebDesignClass/pulls)
 
-## Contents
-- Introduction
-- Pages
-- Installation and Setup
-- Documentation References
-- License
+## Table of Contents
+- [Introduction](#introduction)
+- [Pages](#pages)
+- [Installation and Setup](#installation-and-setup)
+- [Documentation References](#documentation-references)
+- [License](#license)
 
 ---
 
@@ -25,13 +25,11 @@ Fervor Web is a conceptual website for a small boutique web agency specializing 
 This repository is a class project for Web Design, built with Tailwind CSS and original photography.
 
 ## Pages
-| Page | Description |
-|------|-------------|
-| Home | Hero section, value proposition, and call to action |
-| Services | Subscription tiers and what's included |
-| Work | Portfolio of example projects and case studies |
-| About | The agency's story, approach, and values |
-| Contact | Inquiry form and booking |
+- Home: Hero section, value proposition, and call to action.
+- Services: Description and subscription model.
+- Work: Portfolio of example projects and case studies.
+- About: The agency's story, approach, and values.
+- Contact: Inquiry forms and booking.
 
 ## Installation and Setup
 ```bash
@@ -48,8 +46,8 @@ npm run dev
 
 ## Documentation References
 - [Visual Style Guide](docs/visual-style-guide.md)
-- [Technical Design Document](docs/technical-design-doc.md)
-- [Configuration Management](docs/configuration-management-doc.md)
+- [Technical Design Document](docs/technical-design.md)
+- [Configuration Management Plan](docs/configuration-management.md)
 
 *Note: Some documents typically found in a full-stack project are intentionally excluded due to the frontend-focused nature of the project, while others not usually versioned in a repository are included for class purposes.*
 
