@@ -1,0 +1,15 @@
+# Ignore all VSCode configuration files
+vscode/*
+
+# Allow specific configuration files if needed
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Ignore workspace files
+!*.code-workspace
+
+# Ignore built Visual Studio Code extensions
+*.vsix

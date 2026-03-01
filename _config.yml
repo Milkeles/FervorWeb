@@ -1,0 +1,15 @@
+title: Web Design Class
+description: Front end website project for web design class using JS, HTML and CSS.
+theme: jekyll-theme-cayman
+baseurl: "/WebDesignClass"
+url: "https://milkeles.github.io"
+exclude:
+  - site/
+  
+header_links:
+  - name: Go to site
+    url: /
+  - name: Project Brief
+    url: /docs/
+  - name: Vision & Scope
+    url: /docs/vision-and-scope/
