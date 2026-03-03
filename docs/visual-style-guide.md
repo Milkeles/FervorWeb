@@ -1,18 +1,18 @@
 # Visual Style Guide
 > Document ID: FW-VSG-01032026
-
+>
 > Current Version: 1.1
-
+>
 > Date: 02.03.2026
-
+>
 > Organisation: University of Ruse "Angel Kanchev"
-
+>
 > Department: IIT
-
+>
 > Author(s): H. Hristov
-
+>
 > Reviewer(s): M. Dzurov
-
+>
 > Confidentiality: Internal
 
 ## Table of Contents
