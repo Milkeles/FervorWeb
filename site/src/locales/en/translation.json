@@ -1,8 +1,9 @@
 {
   "nav": {
-
+    "language-select": "Select language",
+    "switch-to-en": "Switch to English",
+    "switch-to-bg": "Switch to Bulgarian"
   },
-
   "home": {
     "hero": {
       "title": "Welcome!",

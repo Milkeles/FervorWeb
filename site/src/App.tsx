@@ -35,29 +35,25 @@ function App() {
         </span>
 
 
-        <button
-          onClick={() => setDark(!dark)}
-          className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground transition-all duration-200"
-          aria-label="Toggle dark mode"
-        >
+        <Button onClick={() => setDark(!dark)} variant = "icon" size = "icon" aria-label="Toggle dark mode">
           {dark ? (
             <Sun size={14} strokeWidth={2.5} />
           ) : (
             <Moon size={14} strokeWidth={2.5} />
           )}
-        </button>
+        </Button>
 
         <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <button className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground transition-all duration-200">
+          <Button variant = "icon" size = "icon" aria-label={t('nav.language-select')}>
             <span className={`fi fi-${i18n.language === 'bg' ? 'bg' : 'gb'}`} />
-          </button>
+          </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
-          <DropdownMenuItem onClick={() => i18n.changeLanguage('en')}>
+          <DropdownMenuItem onClick={() => i18n.changeLanguage('en')} aria-label={t('nav.switch-to-en')} lang="en">
             <span className="fi fi-gb mr-2" /> English
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => i18n.changeLanguage('bg')}>
+          <DropdownMenuItem onClick={() => i18n.changeLanguage('bg')} aria-label={t('nav.switch-to-bg')} lang="bg">
             <span className="fi fi-bg mr-2" /> Български
           </DropdownMenuItem>
         </DropdownMenuContent>
@@ -113,7 +109,7 @@ function App() {
             </a>
           </Button>
 
-          <Button variant="outline" className = "w-36" asChild>
+          <Button variant="secondary" className = "w-36" asChild>
             <a href="#hero"> {t('home.hero.secondary-cta')} </a>
           </Button>
 
