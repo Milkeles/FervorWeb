@@ -25,7 +25,6 @@ type Story = StoryObj<typeof Button>
 export const Buttons: Story = {
   args: {
     variant: 'default',
-    effect: "shineHover",
     size: 'default',
     children: 'Press me',
     asChild: false,
@@ -42,9 +41,9 @@ export const AllVariants: Story = {
           <Button variant="default">Default</Button>
           <Button variant="destructive">Destructive</Button>
           <Button variant="secondary">Secondary</Button>
-          <Button variant="ghost">Ghost</Button>
+          <Button variant="ghost">Ghost</Button>    effect: "shineHover",
           <Button variant="link">Link</Button>
-          <Button variant="icon" size = "icon"><Moon size={14} strokeWidth={2.5} /></Button>
+          <Button variant="icon" size = "icon" aria-label="Moon"><Moon size={14} strokeWidth={2.5} /></Button>
         </div>
       </section>
 

@@ -10,6 +10,7 @@ import {
 import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router-dom'
 import { useTheme } from '@/context/theme-context'
+import {Logo} from "@/components/Logo"
 
 const navLinks = [
   { label: 'nav.home', href: '/' },
@@ -26,11 +27,9 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 backdrop-blur-md bg-background/80 border-b border-border">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-3 backdrop-blur-md bg-background/80 border-b border-border">
 
-        <span className="text-sm font-bold tracking-[0.3em] uppercase text-primary">
-          Hristo's site
-        </span>
+        <Logo />
 
         {/* Desktop nav links */}
         <div className="hidden md:flex items-center gap-1">

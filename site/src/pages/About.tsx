@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 // import { useTranslation } from 'react-i18next'
 import { Navbar } from '@/components/Navbar'
-
+import { Footer } from '@/components/Footer'
 export default function About() {
 
   // const { t /*i18n*/ } = useTranslation()
@@ -20,6 +20,8 @@ export default function About() {
       <section className="min-h-screen flex flex-col justify-center px-8 md:px-16 lg:px-24 pt-24">
         <h1>About Page</h1>
       </section>
+
+      <Footer />
     </div>
   )
 }

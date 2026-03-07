@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { ArrowRight } from 'lucide-react'
 import { Navbar } from "@/components/Navbar"
 import { useTheme } from '@/context/theme-context'
+import { Footer } from './components/Footer'
 
 
 function App() {
@@ -149,13 +150,7 @@ function App() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="px-8 md:px-16 lg:px-24 py-10 border-t border-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <span className="text-xs font-bold tracking-[0.3em] uppercase text-primary">Hristo's site</span>
-        <p className="text-xs text-muted-foreground">
-          &copy; 2026 Hristo Hristov. All rights reserved.
-        </p>
-      </footer>
+      <Footer />
 
     </div>
   )

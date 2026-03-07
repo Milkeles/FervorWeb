@@ -10,7 +10,15 @@
     "work": "Work",
     "contact": "Contact",
     "close-menu": "Close the navigation menu",
-    "open-menu": "Open the navigation menu"
+    "open-menu": "Open the navigation menu",
+    "documentation": "Project Wiki"
+  },
+  "footer": {
+    "tagline": "Fast websites that convert, rank well in search, and look the part",
+    "navigation": "Links",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   },
   "home": {
     "hero": {
