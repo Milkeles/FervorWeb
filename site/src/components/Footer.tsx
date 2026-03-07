@@ -44,7 +44,7 @@ export function Footer() {
                     </p>
                     <div className=" grid grid-cols-2 gap-2">
                         {navLinks.map(({ label, href, external }) => (
-                            <Button key={href} variant="navigation" asChild>
+                            <Button key={href} variant="navigation" asChild className="justify-start w-fit h-fit p-0 text-muted-foreground hover:text-foreground normal-case tracking-normal font-normal text-sm">
                                 {external
                                     ? <a href={href} target="_blank" rel="noopener noreferrer">{t(label)}</a>
                                     : <NavLink to={href}>{t(label)}</NavLink>
