@@ -280,6 +280,9 @@
     font-family: var(--font-heading);
     font-weight: 500;
   }
+  [lang] {
+    hyphenate-character: '-';
+  }
 }
 
 .fi {

@@ -17,15 +17,23 @@
     "tagline": "Fast websites that convert, rank well in search, and look the part",
     "navigation": "Links",
     "contact": "Contact",
-    "privacy": "Privacy Policy",
+    "privacy": "Privacy Notice",
     "terms": "Terms of Service"
   },
   "home": {
     "hero": {
-      "title": "Welcome!",
-      "description": "This is a site for something!",
-      "primary-cta": "Contacts",
-      "secondary-cta": "Return"
+      "eyebrow": "small businesses • startups • creators",
+      "title": "Websites Built to Turn More Visitors Into Customers",
+      "description": "At FervorWeb, we build high-performance websites designed to load fast, rank well, and convert visitors into paying customers.",
+      "primary-cta": "Get Your FREE Consultation",
+      "secondary-cta": "See Our Work",
+      "metrics": "What we deliver:",
+      "metric-1": "100%",
+      "metric-1-text": "Ownership stays yours",
+      "metric-2": "0",
+      "metric-2-text": "Lock-in contracts",
+      "metric-3": ">53%",
+      "metric-3-text": "Of visitors leave after 3 seconds. Yours won't."
     }
   },
 

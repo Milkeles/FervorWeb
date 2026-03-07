@@ -17,7 +17,7 @@ function App() {
   const { t /*, i18n */ } = useTranslation()
 
   return (
-    <div className={`min-h-screen bg-background text-foreground font-sans transition-colors overflow-x-hidden duration-200`}>
+    <div className={`text-justify break-all hyphens-auto min-h-screen bg-background text-foreground font-sans transition-colors overflow-x-hidden duration-200`}>
 
       <Navbar />
 
@@ -28,7 +28,7 @@ function App() {
         <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.06]"
           style={{
             backgroundImage: 'linear-gradient(currentColor 1px, transparent 1px), linear-gradient(90deg, currentColor 1px, transparent 1px)',
-            backgroundSize: '60px 60px'
+            backgroundSize: '80px 80px'
           }}
         />
 
@@ -39,17 +39,17 @@ function App() {
           className="relative max-w-5xl transition-all duration-700"
         >
           <p className="text-xs font-bold tracking-[0.4em] uppercase text-muted-foreground mb-8">
-            Performance . Conversion . Speed
+            {t('home.hero.eyebrow')}
           </p>
 
           <h1
-            className="text-[clamp(3rem,9vw,8rem)] leading-[0.95] tracking-tight mb-10"
+            className="text-[clamp(32px,9vw,64px)] leading-[0.95] tracking-tight mb-10"
           >
             {t('home.hero.title')}
           </h1>
 
           <p
-            className="text-lg md:text-xl text-muted-foreground max-w-xl mb-12 leading-relaxed transition-all duration-700 delay-100"
+            className="text-lg md:text-xl wrap-break-words text-muted-foreground max-w-xl mb-12 leading-relaxed transition-all duration-700 delay-100"
           >
             {t('home.hero.description')}
           </p>
@@ -58,14 +58,14 @@ function App() {
             className="flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-200"
           >
 
-            <Button variant="default" effect="shineHover" className="w-36" asChild>
+            <Button variant="default" effect="shineHover" className="w-auto" asChild>
               <a href="#contact">
                 {t('home.hero.primary-cta')}
                 <ArrowRight size={14} strokeWidth={2.5} />
               </a>
             </Button>
 
-            <Button variant="secondary" className="w-36" asChild>
+            <Button variant="secondary" className="w-auto" asChild>
               <a href="#hero"> {t('home.hero.secondary-cta')} </a>
             </Button>
 
@@ -74,22 +74,22 @@ function App() {
 
         {/* Stat bar */}
         <div
-          className="relative mt-24 overflow-hidden transition-all duration-700 delay-300"
+          className="relative mt-24 transition-all duration-700 delay-300"
         >
           {/* Header for metrics - now inside the container, above the grid */}
-          <div className=" px-6 py-4">
+          <div className="py-4">
             <p
               className="text-lg md:text-xl text-muted-foreground leading-relaxed"
             >
-              Some metrics:
+              {t('home.hero.metrics')}
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-px bg-border max-w-2xl border border-border rounded-sm">
+          <div className="grid grid-cols-3 gap-px bg-border max-w-2xl rounded-lg outline outline-border text-pretty">
             {[
-              { value: '< 1s', label: 'Load time' },
-              { value: '98+', label: 'Lighthouse score' },
-              { value: '3×', label: 'Avg. conversion lift' },
+              { value: t('home.hero.metric-1'), label: t('home.hero.metric-1-text') },
+              { value: t('home.hero.metric-2'), label: t('home.hero.metric-2-text') },
+              { value: t('home.hero.metric-3'), label: t('home.hero.metric-3-text') },
             ].map(({ value, label }) => (
               <div key={label} className="flex flex-col items-center justify-center py-6 bg-background text-center px-4">
                 <span className="text-2xl font-black tracking-tight">{value}</span>

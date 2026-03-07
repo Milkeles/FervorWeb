@@ -12,9 +12,9 @@ const buttonVariants = cva(
         default:
           "bg-primary text-primary-foreground font-bold hover:brightness-90 active:scale-95 active:brightness-85 focus-visible:ring-2 focus-visible:ring-primary",
         destructive:
-          "bg-destructive text-white dark:bg-destructive/60 hover:brightness-90 active:scale-95 active:brightness-85 focus-visible:ring-2 focus-visible:ring-destructive",
+          "bg-destructive text-white font-bold dark:bg-destructive/60 hover:brightness-90 active:scale-95 active:brightness-85 focus-visible:ring-2 focus-visible:ring-destructive",
         secondary:
-          "border border-border bg-background text-foreground hover:bg-muted active:scale-95 active:brightness-85 focus-visible:ring-2 focus-visible:ring-ring",
+          "border border-border bg-background font-bold text-foreground hover:bg-muted active:scale-95 active:brightness-85 focus-visible:ring-2 focus-visible:ring-ring",
         ghost:
           "hover:bg-accent hover:text-foreground dark:hover:bg-accent/50 active:scale-95 active:brightness-85 focus-visible:ring-2 focus-visible:ring-ring",
         link:
@@ -37,10 +37,10 @@ const buttonVariants = cva(
       },
 
       size: {
-        default: "h-10 px-6 py-3 has-[>svg]:px-3",
+        default: "h-10 px-6 py-3 text-base has-[>svg]:px-3",
         xs: "h-6 gap-1 rounded-md px-2 text-xs has-[>svg]:px-1.5 [&_svg:not([class*='size-'])]:size-3",
         sm: "h-8 gap-1.5 rounded-md px-3 has-[>svg]:px-2.5",
-        lg: "h-10 rounded-md px-6 py-3 has-[>svg]:px-4",
+        lg: "h-10 rounded-md text-lg px-6 py-3 has-[>svg]:px-4",
         icon: "size-9",
         "icon-xs": "size-6 rounded-md [&_svg:not([class*='size-'])]:size-3",
         "icon-sm": "size-8",

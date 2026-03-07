@@ -44,7 +44,7 @@ export function Footer() {
                     </p>
                     <div className=" grid grid-cols-2 gap-2">
                         {navLinks.map(({ label, href, external }) => (
-                            <Button key={href} variant="navigation" asChild className="justify-start w-fit h-fit p-0 text-muted-foreground hover:text-foreground normal-case tracking-normal font-normal text-sm">
+                            <Button key={href} variant="link" asChild className="justify-start w-fit h-fit p-0 text-muted-foreground hover:text-foreground normal-case tracking-normal font-normal text-sm">
                                 {external
                                     ? <a href={href} target="_blank" rel="noopener noreferrer">{t(label)}</a>
                                     : <NavLink to={href}>{t(label)}</NavLink>
@@ -62,7 +62,7 @@ export function Footer() {
                     <a href="mailto:hristo@fervorgames.com" className="justify-start text-sm text-muted-foreground hover:text-foreground transition-colors">
                         hristo@fervorgames.com
                     </a>
-                    <div className="flex gap-3 mt-2">
+                    <Button className="flex gap-3 mt-2" variant="link">
                         {socialLinks.map(({ label, href }) => (
                             <a
                                 key={label}
@@ -74,7 +74,7 @@ export function Footer() {
                                 {label}
                             </a>
                         ))}
-                    </div>
+                    </Button>
                 </div>
 
             </div>
@@ -86,7 +86,7 @@ export function Footer() {
                 </p>
                 <div className="flex gap-4">
                     {legalLinks.map(({ label, href }) => (
-                        <Button key={href} variant="navigation" asChild className="justify-start w-fit h-fit p-0 text-muted-foreground hover:text-foreground normal-case tracking-normal font-normal text-xs">
+                        <Button key={href} variant="link" asChild className="justify-start w-fit h-fit p-0 text-muted-foreground hover:text-foreground normal-case tracking-normal font-normal text-xs">
                             <NavLink to={href}>{t(label)}</NavLink>
                         </Button>
                     ))}
