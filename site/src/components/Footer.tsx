@@ -62,7 +62,7 @@ export function Footer() {
                     <a href="mailto:hristo@fervorgames.com" className="justify-start text-sm text-muted-foreground hover:text-foreground transition-colors">
                         hristo@fervorgames.com
                     </a>
-                    <Button className="flex gap-3 mt-2" variant="link">
+                    <div className="flex gap-3 mt-2 underline underline-offset-4">
                         {socialLinks.map(({ label, href }) => (
                             <a
                                 key={label}
@@ -74,7 +74,7 @@ export function Footer() {
                                 {label}
                             </a>
                         ))}
-                    </Button>
+                    </div>
                 </div>
 
             </div>
@@ -86,7 +86,7 @@ export function Footer() {
                 </p>
                 <div className="flex gap-4">
                     {legalLinks.map(({ label, href }) => (
-                        <Button key={href} variant="link" asChild className="justify-start w-fit h-fit p-0 text-muted-foreground hover:text-foreground normal-case tracking-normal font-normal text-xs">
+                        <Button key={href} variant="navigation" asChild className="justify-start w-fit h-fit p-0 text-muted-foreground hover:text-foreground normal-case tracking-normal font-normal text-xs">
                             <NavLink to={href}>{t(label)}</NavLink>
                         </Button>
                     ))}
