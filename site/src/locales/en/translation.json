@@ -34,18 +34,26 @@
       "metric-2-text": "Lock-in contracts",
       "metric-3": ">53%",
       "metric-3-text": "Of visitors leave after 3 seconds. Yours won't."
+    },
+    "services": {
+      "consultation": {
+        "title": "Consultation",
+        "description": "Talk with one of our experts about your website, conversion goals, and growth opportunities. We'll suggest practical ways to attract more visitors and turn them into customers.",
+        "action": "Book Your FREE Consultation"
+      },
+      "audit": {
+        "title": "Website Audit",
+        "description": "A detailed analysis of your website's performance, user experience, SEO, and conversion potential. Discover what’s holding your site back and how to fix it.",
+        "action": "Learn More"
+      },
+      "development": {
+        "title": "Website Development",
+        "description": "We design and build fast, modern websites optimized for performance, search engines, and conversions.",
+        "action": "Start Your Project"
+      }
     }
   },
-
-  "about": {
-
-  },
-
-  "services": {
-
-  },
-
-  "contact": {
-
-  }
+  "about": {},
+  "services": {},
+  "contact": {}
 }

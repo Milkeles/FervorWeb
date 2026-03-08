@@ -5,7 +5,11 @@ import { ArrowRight } from 'lucide-react'
 import { Navbar } from "@/components/Navbar"
 import { useTheme } from '@/context/theme-context'
 import { Footer } from './components/Footer'
-
+import { CardGrid } from './components/CardGrid';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter, CardAction } from "@/components/ui/Card";
+import ConsultationIcon from '@/assets/icons/consultation.svg?react'
+import AuditIcon from "@/assets/icons/audit.svg?react"
+import DevelopmentIcon from "@/assets/icons/development.svg?react"
 
 function App() {
   const { dark } = useTheme()
@@ -28,13 +32,14 @@ function App() {
         <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.06]"
           style={{
             backgroundImage: 'linear-gradient(currentColor 1px, transparent 1px), linear-gradient(90deg, currentColor 1px, transparent 1px)',
-            backgroundSize: '80px 80px'
+            backgroundSize: '40px 40px'
           }}
         />
 
-        {/* Accent blob */}
-        <div className="absolute top-1/3 right-0 w-125 h-125 rounded-full opacity-10 dark:opacity-[0.07] blur-[120px] bg-primary pointer-events-none" />
-
+        {/* Accent blobs */}
+        <div className="absolute top-1/3 right-0 w-175 h-175 rounded-full opacity-10 blur-[150px] bg-primary pointer-events-none" />
+        <div className="absolute bottom-0 left-1/4 w-100 h-100 rounded-full opacity-15 blur-[150px] bg-accent pointer-events-none" />
+        <div className="absolute top-0 left-0 w-100 h-100 rounded-full opacity-10 blur-[150px] bg-primary pointer-events-none" />
         <div
           className="relative max-w-5xl transition-all duration-700"
         >
@@ -98,6 +103,71 @@ function App() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* SERVICES */}
+      <section id="services" className="py-32 px-8 md:px-16 lg:px-24 border-t border-border">
+        <h2 className='text-3xl py-8 uppercase'>
+          Our Services
+        </h2>
+        <CardGrid columns={3}>
+          <Card className="flex flex-col">
+            <CardHeader>
+              <div className="flex items-center gap-2">
+                <ConsultationIcon width={80} height={80} className="text-primary"/>
+                <CardTitle> <h3 className="text-2xl"> {t('home.services.consultation.title')} </h3> </CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent className="flex-1">
+              <CardDescription>
+                <p> {t('home.services.consultation.description')} </p>
+              </CardDescription>
+            </CardContent>
+            <CardFooter>
+              <Button variant="secondary" className="w-full mt-10">
+                {t('home.services.consultation.action')}
+              </Button>
+            </CardFooter>
+          </Card>
+
+          <Card className="flex flex-col">
+            <CardHeader>
+              <div className="flex items-center gap-2">
+                <AuditIcon width={80} height={80} className="text-primary"/>
+                <CardTitle> <h3 className="text-2xl"> {t('home.services.audit.title')} </h3> </CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent className="flex-1">
+              <CardDescription>
+                <p> {t('home.services.audit.description')} </p>
+              </CardDescription>
+            </CardContent>
+            <CardFooter>
+              <Button variant="secondary" className="w-full mt-10">
+                {t('home.services.audit.action')}
+              </Button>
+            </CardFooter>
+          </Card>
+
+          <Card className="flex flex-col">
+            <CardHeader>
+              <div className="flex items-center gap-2">
+                <DevelopmentIcon width={80} height={80} className="text-primary"/>
+                <CardTitle> <h3 className="text-2xl"> {t('home.services.development.title')} </h3> </CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent className="flex-1">
+              <CardDescription>
+                <p> {t('home.services.development.description')} </p>
+              </CardDescription>
+            </CardContent>
+            <CardFooter>
+              <Button variant="secondary" className="w-full mt-10">
+                {t('home.services.development.action')}
+              </Button>
+            </CardFooter>
+          </Card>
+        </CardGrid>
       </section>
 
       {/* CONTACT */}
