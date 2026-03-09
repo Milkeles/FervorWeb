@@ -17,6 +17,7 @@ import DevelopmentIcon from "@/assets/icons/development.svg?react"
 import Showcase1 from '@/assets/project-showcase-1.jpg?w=400;800;1200&format=avif;webp;jpg&as=picture'
 import Showcase2 from '@/assets/project-showcase-2.jpg?w=400;800;1200&format=avif;webp;jpg&as=picture'
 import HeroImage from '@/assets/hero-image.jpg?w=256;320;640&format=avif;webp;jpg&as=picture'
+import { useInView } from 'react-intersection-observer'
 
 function App() {
   const { dark } = useTheme()
@@ -26,6 +27,7 @@ function App() {
   }, [dark])
 
   const { t /*, i18n */ } = useTranslation()
+  const { ref, inView } = useInView({ triggerOnce: true })
 
   return (
     <div className={`min-h-screen bg-background text-foreground font-sans transition-colors overflow-x-hidden duration-200`}>
@@ -122,64 +124,66 @@ function App() {
         eyebrow={t('home.services.section-eyebrow')}
         title={t('home.services.section-title')}
       >
-        <CardGrid columns={3}>
-          <Card className="flex flex-col">
-            <CardHeader>
-              <div className="flex items-center gap-2">
-                <ConsultationIcon width={80} height={80} className="text-primary" />
-                <CardTitle> <h3 className="text-2xl"> {t('home.services.consultation.title')} </h3> </CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-1">
-              <CardDescription>
-                <p> {t('home.services.consultation.description')} </p>
-              </CardDescription>
-            </CardContent>
-            <CardFooter>
-              <Button variant="secondary" className="w-full mt-10">
-                {t('home.services.consultation.action')}
-              </Button>
-            </CardFooter>
-          </Card>
+        <div ref={ref}>
+          {inView && <CardGrid columns={3}>
+            <Card className="flex flex-col">
+              <CardHeader>
+                <div className="flex items-center gap-2">
+                  <ConsultationIcon width={80} height={80} className="text-primary" />
+                  <CardTitle> <h3 className="text-2xl"> {t('home.services.consultation.title')} </h3> </CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent className="flex-1">
+                <CardDescription>
+                  <p> {t('home.services.consultation.description')} </p>
+                </CardDescription>
+              </CardContent>
+              <CardFooter>
+                <Button variant="secondary" className="w-full mt-10">
+                  {t('home.services.consultation.action')}
+                </Button>
+              </CardFooter>
+            </Card>
 
-          <Card className="flex flex-col">
-            <CardHeader>
-              <div className="flex items-center gap-2">
-                <AuditIcon width={80} height={80} className="text-primary" />
-                <CardTitle> <h3 className="text-2xl"> {t('home.services.audit.title')} </h3> </CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-1">
-              <CardDescription>
-                <p> {t('home.services.audit.description')} </p>
-              </CardDescription>
-            </CardContent>
-            <CardFooter>
-              <Button variant="secondary" className="w-full mt-10">
-                {t('home.services.audit.action')}
-              </Button>
-            </CardFooter>
-          </Card>
+            <Card className="flex flex-col">
+              <CardHeader>
+                <div className="flex items-center gap-2">
+                  <AuditIcon width={80} height={80} className="text-primary" />
+                  <CardTitle> <h3 className="text-2xl"> {t('home.services.audit.title')} </h3> </CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent className="flex-1">
+                <CardDescription>
+                  <p> {t('home.services.audit.description')} </p>
+                </CardDescription>
+              </CardContent>
+              <CardFooter>
+                <Button variant="secondary" className="w-full mt-10">
+                  {t('home.services.audit.action')}
+                </Button>
+              </CardFooter>
+            </Card>
 
-          <Card className="flex flex-col">
-            <CardHeader>
-              <div className="flex items-center gap-2">
-                <DevelopmentIcon width={80} height={80} className="text-primary" />
-                <CardTitle> <h3 className="text-2xl"> {t('home.services.development.title')} </h3> </CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-1">
-              <CardDescription>
-                <p> {t('home.services.development.description')} </p>
-              </CardDescription>
-            </CardContent>
-            <CardFooter>
-              <Button variant="secondary" className="w-full mt-10">
-                {t('home.services.development.action')}
-              </Button>
-            </CardFooter>
-          </Card>
-        </CardGrid>
+            <Card className="flex flex-col">
+              <CardHeader>
+                <div className="flex items-center gap-2">
+                  <DevelopmentIcon width={80} height={80} className="text-primary" />
+                  <CardTitle> <h3 className="text-2xl"> {t('home.services.development.title')} </h3> </CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent className="flex-1">
+                <CardDescription>
+                  <p> {t('home.services.development.description')} </p>
+                </CardDescription>
+              </CardContent>
+              <CardFooter>
+                <Button variant="secondary" className="w-full mt-10">
+                  {t('home.services.development.action')}
+                </Button>
+              </CardFooter>
+            </Card>
+          </CardGrid>}
+        </div>
       </Section>
 
 
@@ -201,7 +205,7 @@ function App() {
           }}
         />
 
-        <hr className = "m-12"></hr>
+        <hr className="m-12"></hr>
 
         <MediaCard
           title={t('home.work.project-2.title')}
@@ -215,15 +219,15 @@ function App() {
           }}
         />
 
-        <div className = 'flex mt-12'> 
+        <div className='flex mt-12'>
           <p className='text-lg text-muted-foreground'> {t('home.work.footer-text-1')}
-            <Button variant='link' className = 'px-1' asChild>
+            <Button variant='link' className='px-1' asChild>
               <NavLink to="/work">
                 {t('home.work.footer-cta-1')}
               </NavLink>
             </Button>
             {t('home.work.footer-text-2')}
-            <Button variant='link' className = 'px-1' asChild>
+            <Button variant='link' className='px-1' asChild>
               <NavLink to="/contact">
                 {t('home.work.footer-cta-2')}
               </NavLink>

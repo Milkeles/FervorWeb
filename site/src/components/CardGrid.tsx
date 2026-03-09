@@ -10,6 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/Carousel"
 
+
 interface CardGridProps {
   children: ReactNode
   columns?: 1 | 2 | 3 | 4
