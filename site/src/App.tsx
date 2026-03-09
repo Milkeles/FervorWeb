@@ -13,10 +13,9 @@ import { FeaturedProject } from '@/components/FeaturedProject'
 import ConsultationIcon from '@/assets/icons/consultation.svg?react'
 import AuditIcon from "@/assets/icons/audit.svg?react"
 import DevelopmentIcon from "@/assets/icons/development.svg?react"
-import Showcase1 from '@/assets/Showcase1.jpg?w=400;800;1200&format=avif;webp;jpg&as=picture'
-import Showcase2 from '@/assets/Showcase2.jpg?w=400;800;1200&format=avif;webp;jpg&as=picture'
-
-console.log(Showcase1)
+import Showcase1 from '@/assets/project-showcase-1.jpg?w=400;800;1200&format=avif;webp;jpg&as=picture'
+import Showcase2 from '@/assets/project-showcase-2.jpg?w=400;800;1200&format=avif;webp;jpg&as=picture'
+import HeroImage from '@/assets/hero-image.jpg?w=256;320;640&format=avif;webp;jpg&as=picture'
 
 function App() {
   const { dark } = useTheme()
@@ -28,7 +27,7 @@ function App() {
   const { t /*, i18n */ } = useTranslation()
 
   return (
-    <div className={`text-justify break-all text-pretty hyphens-auto min-h-screen bg-background text-foreground font-sans transition-colors overflow-x-hidden duration-200`}>
+    <div className={`text-justify break-all hyphens-auto min-h-screen bg-background text-foreground font-sans transition-colors overflow-x-hidden duration-200`}>
 
       <Navbar />
 
@@ -47,56 +46,59 @@ function App() {
         <div className="absolute top-1/3 right-0 w-175 h-175 rounded-full opacity-10 blur-[150px] bg-primary pointer-events-none" />
         <div className="absolute bottom-0 left-1/4 w-100 h-100 rounded-full opacity-15 blur-[150px] bg-accent pointer-events-none" />
         <div className="absolute top-0 left-0 w-100 h-100 rounded-full opacity-10 blur-[150px] bg-primary pointer-events-none" />
-        <div
-          className="relative max-w-5xl transition-all duration-700"
-        >
-          <p className="text-xs font-bold tracking-[0.4em] uppercase text-muted-foreground mb-8">
-            {t('home.hero.eyebrow')}
-          </p>
 
-          <h1
-            className="text-[clamp(32px,9vw,64px)] leading-[0.95] tracking-tight mb-10"
-          >
-            {t('home.hero.title')}
-          </h1>
+        <div className="relative flex flex-col md:flex-row items-center gap-12 transition-all duration-700">
+          {/* Left - text content */}
+          <div className="flex flex-col z-10">
+            <p className="text-xs font-bold tracking-[0.4em] uppercase text-muted-foreground mb-8">
+              {t('home.hero.eyebrow')}
+            </p>
+            <h1 className="text-[clamp(32px,9vw,64px)] leading-[0.95] max-w-5xl tracking-tight mb-10">
+              {t('home.hero.title')}
+            </h1>
+            <p className="text-lg md:text-xl wrap-break-words text-muted-foreground max-w-xl mb-12 leading-relaxed transition-all duration-700 delay-100">
+              {t('home.hero.description')}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-200">
+              <Button variant="default" effect="shineHover" className="w-auto" asChild>
+                <a href="#contact">
+                  {t('home.hero.primary-cta')}
+                  <ArrowRight size={14} strokeWidth={2.5} />
+                </a>
+              </Button>
+              <Button variant="secondary" className="w-auto" asChild>
+                <a href="#hero">{t('home.hero.secondary-cta')}</a>
+              </Button>
+            </div>
+          </div>
 
-          <p
-            className="text-lg md:text-xl wrap-break-words text-muted-foreground max-w-xl mb-12 leading-relaxed transition-all duration-700 delay-100"
-          >
-            {t('home.hero.description')}
-          </p>
-
-          <div
-            className="flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-200"
-          >
-
-            <Button variant="default" effect="shineHover" className="w-auto" asChild>
-              <a href="#contact">
-                {t('home.hero.primary-cta')}
-                <ArrowRight size={14} strokeWidth={2.5} />
-              </a>
-            </Button>
-
-            <Button variant="secondary" className="w-auto" asChild>
-              <a href="#hero"> {t('home.hero.secondary-cta')} </a>
-            </Button>
-
+          {/* Right - image */}
+          <div className="absolute right-16 lg:right-24 top-1/1 -translate-y-1/2">
+            <div className="hidden xl:block w-100 h-100 rounded-full overflow-hidden ring-4 ring-primary/20 -z-10">
+              <picture>
+                {(Array.isArray(HeroImage.sources)
+                  ? HeroImage.sources
+                  : Object.entries(HeroImage.sources).map(([format, srcset]) => ({
+                    type: `image/${format}`,
+                    srcset: srcset as string,
+                  }))
+                ).map(({ srcset, type }) => (
+                  <source key={type} srcSet={srcset} type={type} sizes="(max-width: 768px) 288px, 360px" />
+                ))}
+                <img src={HeroImage.img.src} alt={t('home.hero.image-alt')} className="w-full h-full object-cover" />
+              </picture>
+            </div>
+            <div className="absolute inset-0 rounded-full bg-primary/20 blur-2xl -z-10" />
           </div>
         </div>
 
         {/* Stat bar */}
-        <div
-          className="relative mt-24 transition-all duration-700 delay-300"
-        >
-          {/* Header for metrics - now inside the container, above the grid */}
+        <div className="relative mt-24 transition-all duration-700 delay-300">
           <div className="py-4">
-            <p
-              className="text-lg md:text-xl text-muted-foreground leading-relaxed"
-            >
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               {t('home.hero.metrics')}
             </p>
           </div>
-
           <div className="grid grid-cols-3 gap-px bg-border max-w-2xl rounded-lg outline outline-border text-pretty">
             {[
               { value: t('home.hero.metric-1'), label: t('home.hero.metric-1-text') },
@@ -179,7 +181,7 @@ function App() {
 
 
       {/* FEATURED WORK */}
-      
+
       <Section id="work"
         eyebrow={t('home.work.section-eyebrow')}
         title={t('home.work.section-title')}

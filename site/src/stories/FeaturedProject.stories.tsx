@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { FeaturedProject } from '../components/FeaturedProject'
-import Showcase1 from '../assets/Showcase1.jpg?w=400;800;1200;1600&format=avif;webp;jpg&as=picture'
-import Showcase2 from '../assets/Showcase1.jpg?w=400;800;1200;1600&format=avif;webp;jpg&as=picture'
+import Showcase1 from '../assets/project-showcase-1.jpg?w=400;800;1200;1600&format=avif;webp;jpg&as=picture'
+import Showcase2 from '../assets/project-showcase-2.jpg?w=400;800;1200;1600&format=avif;webp;jpg&as=picture'
 import '../index.css'
 
 const meta: Meta<typeof FeaturedProject> = {
