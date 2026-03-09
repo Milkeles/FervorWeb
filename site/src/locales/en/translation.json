@@ -154,9 +154,43 @@
     }
   },
   "services": {
-    "eyebrow": "",
-    "title": "",
-    "description": ""
+    "eyebrow": "digital growth services",
+    "title": "Websites Built for Performance",
+    "description": "Our services cover strategy, website audits, and high-performance development. Everything we do is designed to attract more visitors and turn them into customers.",
+    "cta": "Contact us",
+
+    "consultation": {
+      "eyebrow": "strategy session",
+      "title": "Free Website Consultation",
+      "description": "Talk with one of our experts about your website, goals, and conversion challenges. We'll identify opportunities to attract more visitors and turn them into customers.",
+      "card": {
+        "alt": "Consultation and strategy planning",
+        "title": "Expert Strategy Session",
+        "description": "In a focused consultation, we review your current website, discuss your business goals, and suggest practical strategies to improve conversions and performance."
+      }
+    },
+
+    "audit": {
+      "eyebrow": "deep analysis",
+      "title": "Website Audit",
+      "description": "Discover what’s holding your website back. We analyze usability, speed, SEO, and conversion potential to uncover opportunities for growth.",
+      "card": {
+        "alt": "Website audit and performance analysis",
+        "title": "Comprehensive Website Analysis",
+        "description": "We evaluate your site's design, performance, and user journey to identify friction points and opportunities to improve engagement and conversions."
+      }
+    },
+
+    "development": {
+      "eyebrow": "performance development",
+      "title": "High-Performance Website Development",
+      "description": "We design and build fast, modern websites optimized for performance, search engines, and conversions.",
+      "card": {
+        "alt": "Modern website development",
+        "title": "Conversion-Focused Development",
+        "description": "Your website is built with speed, scalability, and conversions in mind—ensuring visitors enjoy a seamless experience and are more likely to become customers."
+      }
+    }
   },
   "contact": {
     "eyebrow": "Get In Touch",

@@ -33,7 +33,7 @@ function App() {
       <Navbar />
 
       {/* HERO */}
-      <section id="hero" className="min-h-screen flex flex-col justify-center px-8 md:px-16 lg:px-24 pt-24 pb-16 relative overflow-hidden">
+      <section id="hero" className="min-h-screen flex flex-col justify-center px-12 md:px-18 lg:px-26 pt-24 pb-16 relative overflow-hidden">
 
         {/* Background grid */}
         <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.06]"
@@ -216,14 +216,12 @@ function App() {
         />
 
         <div className = 'flex mt-12'> 
-          <p className='text-lg text-muted-foreground flex-initial'> {t('home.work.footer-text-1')}
+          <p className='text-lg text-muted-foreground'> {t('home.work.footer-text-1')}
             <Button variant='link' className = 'px-1' asChild>
               <NavLink to="/work">
                 {t('home.work.footer-cta-1')}
               </NavLink>
             </Button>
-          </p>
-          <p className='text-lg text-muted-foreground flex-initial'>
             {t('home.work.footer-text-2')}
             <Button variant='link' className = 'px-1' asChild>
               <NavLink to="/contact">
@@ -231,6 +229,7 @@ function App() {
               </NavLink>
             </Button>
           </p>
+
         </div>
       </Section>
 

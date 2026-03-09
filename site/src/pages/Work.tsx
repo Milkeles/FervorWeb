@@ -44,7 +44,7 @@ function WorkCard({ title, description, href, picture, alt }: WorkCardProps) {
         </picture>
       </div>
       <CardHeader>
-        <CardTitle><h3 className="text-lg">{title}</h3></CardTitle>
+        <CardTitle><h4 className="text-lg">{title}</h4></CardTitle>
       </CardHeader>
       <CardContent className="flex-1">
         <CardDescription>{description}</CardDescription>

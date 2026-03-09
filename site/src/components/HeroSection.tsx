@@ -9,7 +9,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ eyebrow, title, description, children }: Readonly<HeroSectionProps>) {
   return (
-    <section className="pt-40 pb-24 px-8 md:px-16 lg:px-24 relative overflow-hidden">
+    <section className="pt-40 pb-24 px-12 md:px-18 lg:px-26 relative overflow-hidden">
       {/* Background grid */}
       <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.06]"
         style={{
@@ -21,7 +21,7 @@ export function HeroSection({ eyebrow, title, description, children }: Readonly<
       {/* Accent blob */}
       <div className="absolute top-0 right-0 w-100 h-100 rounded-full opacity-10 blur-[150px] bg-primary pointer-events-none" />
 
-      <div className="relative z-10 max-w-3xl">
+      <div className="relative z-10">
         {eyebrow && (
           <p className="text-xs font-bold tracking-[0.4em] uppercase text-muted-foreground mb-6">
             {eyebrow}

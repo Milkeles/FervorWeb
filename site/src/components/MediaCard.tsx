@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/Button'
 import { ArrowRight } from 'lucide-react'
 import { type ReactNode } from 'react'
+import { NavLink } from 'react-router-dom';
 
 interface PictureData {
     sources: { srcset: string; type: string }[] | Record<string, string>
@@ -11,6 +12,7 @@ interface MediaCardProps {
     title?: string
     description?: string
     href?: string
+    external?: boolean
     ctaLabel?: string
     reverse?: boolean
     children?: ReactNode
@@ -20,7 +22,7 @@ interface MediaCardProps {
     }
 }
 
-export function MediaCard({ title, description, href, ctaLabel, image, reverse, children }: Readonly<MediaCardProps>) {
+export function MediaCard({ title, description, href, ctaLabel, image, reverse, children, external }: Readonly<MediaCardProps>) {
     const hasContent = title || description || href || children
 
     return (
@@ -58,15 +60,23 @@ export function MediaCard({ title, description, href, ctaLabel, image, reverse, 
             {/* Content */}
             {hasContent && (
                 <div className={`flex-1 flex flex-col gap-6 ${reverse ? '' : 'text-right items-end'}`}>
-                    {title && <h3 className="text-3xl font-black tracking-tight">{title}</h3>}
+                    {title && <h3 className="text-2xl font-black tracking-tight">{title}</h3>}
                     {description && <p className="text-muted-foreground leading-relaxed">{description}</p>}
                     {children}
                     {href && (
                         <Button variant="secondary" className="w-fit" asChild>
+                            {external ?
                             <a href={href} target="_blank" rel="noopener noreferrer">
                                 {ctaLabel ?? 'Visit site'}
                                 <ArrowRight size={14} strokeWidth={2.5} />
                             </a>
+                            :
+                            <NavLink to={href}>
+                                {ctaLabel ?? 'Visit site'}
+                                <ArrowRight size={14} strokeWidth={2.5} />
+                            </NavLink>
+                            }
+                
                         </Button>
                     )}
                 </div>
