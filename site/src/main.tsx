@@ -12,7 +12,6 @@ const Services = lazy(() => import("./pages/Services.tsx"))
 const Work = lazy(() => import("./pages/Work.tsx"))
 const Contact = lazy(() => import("./pages/Contact.tsx"))
 
-
 function Root() {
   const [dark, setDark] = useState(true)
 
