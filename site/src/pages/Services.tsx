@@ -6,7 +6,8 @@ import { HeroSection } from '@/components/HeroSection'
 import { Section } from '@/components/Section'
 import { MediaCard } from '@/components/MediaCard'
 import Showcase1 from '@/assets/project-showcase-1.jpg?w=400;800;1200&format=avif;webp;jpg&as=picture'
-import Showcase2 from '@/assets/project-showcase-2.jpg?w=400;800;1200&format=avif;webp;jpg&as=picture'
+import Consultation from '@/assets/consultation.png?w=400;800;1200&format=avif;webp;jpg&as=picture'
+import Audit from '@/assets/audit.png?w=400;800;1200&format=avif;webp;jpg&as=picture'
 
 export default function Services() {
   const { t } = useTranslation()
@@ -39,7 +40,7 @@ export default function Services() {
           description={t('services.consultation.card.description')}
           href="/contact#contact-form"
           ctaLabel={t('services.cta')}
-          image={{ picture: Showcase1, alt: t('services.consultation.card.alt') }}
+          image={{ picture: Consultation, alt: t('services.consultation.card.alt') }}
         />
       </Section>
 
@@ -55,7 +56,7 @@ export default function Services() {
           description={t('services.audit.card.description')}
           href="/contact#contact-form"
           ctaLabel={t('services.cta')}
-          image={{ picture: Showcase2, alt: t('services.audit.card.alt') }}
+          image={{ picture: Audit, alt: t('services.audit.card.alt') }}
         />
       </Section>
 
