@@ -45,4 +45,4 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 - Building/rendering issues in workflow and formatting
 
-See [README](https://milkeles.github.io/WebDesignClass/docs/) for installation and project details.
+See [README](https://milkeles.github.io/FervorWeb/docs/) for installation and project details.

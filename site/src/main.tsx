@@ -28,7 +28,7 @@ function Root() {
     <StrictMode>
       <HelmetProvider>
         <ThemeContext.Provider value={themeValue}>
-          <BrowserRouter basename="/WebDesignClass/">
+          <BrowserRouter basename="/FervorWeb/">
             <Suspense fallback={null}>
               <Routes>
                 <Route path="/" element={<App />} />

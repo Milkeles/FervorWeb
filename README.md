@@ -5,10 +5,10 @@ permalink: /docs/
 ---
 
 # Fervor Web
-[![Build Status](https://img.shields.io/github/actions/workflow/status/Milkeles/WebDesignClass/Deploy.yml)](https://github.com/Milkeles/WebDesignClass/actions)
-[![License: MIT](https://img.shields.io/github/license/Milkeles/WebDesignClass)](LICENSE)
-[![Issues](https://img.shields.io/github/issues/Milkeles/WebDesignClass)](https://github.com/Milkeles/WebDesignClass/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/Milkeles/WebDesignClass)](https://github.com/Milkeles/WebDesignClass/pulls)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/Milkeles/FervorWeb/Deploy.yml)](https://github.com/Milkeles/FervorWeb/actions)
+[![License: MIT](https://img.shields.io/github/license/Milkeles/FervorWeb)](LICENSE)
+[![Issues](https://img.shields.io/github/issues/Milkeles/FervorWeb)](https://github.com/Milkeles/FervorWeb/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/Milkeles/FervorWeb)](https://github.com/Milkeles/FervorWeb/pulls)
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -34,8 +34,8 @@ This repository is a class project for Web Design, built with Tailwind CSS and o
 ## Installation and Setup
 ```bash
 # Clone the repository
-git clone https://github.com/Milkeles/WebDesignClass.git
-cd WebDesignClass
+git clone https://github.com/Milkeles/FervorWeb.git
+cd FervorWeb
 
 # Install dependencies
 npm install

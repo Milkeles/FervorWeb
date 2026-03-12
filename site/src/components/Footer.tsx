@@ -9,7 +9,7 @@ const navLinks = [
     { label: 'nav.about', href: '/about' },
     { label: 'nav.work', href: '/work' },
     { label: 'nav.contact', href: '/contact' },
-    { label: 'nav.documentation', href: 'https://milkeles.github.io/WebDesignClass/docs/', external: true },
+    { label: 'nav.documentation', href: 'https://milkeles.github.io/FervorWeb/docs/', external: true },
 ]
 
 const legalLinks = [

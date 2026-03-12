@@ -20,7 +20,7 @@ function fontPreloadPlugin() {
       if (!ctx.bundle) return html
       const fontLinks = Object.keys(ctx.bundle)
         .filter(f => f.endsWith('.woff2') && !f.includes('italic'))
-        .map(f => `<link rel="preload" href="/WebDesignClass/${f}" as="font" type="font/woff2" crossorigin />`)
+        .map(f => `<link rel="preload" href="/FervorWeb/${f}" as="font" type="font/woff2" crossorigin />`)
         .join('\n    ')
       return html.replace('</head>', `    ${fontLinks}\n  </head>`)
     }
@@ -34,7 +34,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src")
     }
   },
-  base: '/WebDesignClass/',
+  base: '/FervorWeb/',
   build: {
     rollupOptions: {
       output: {

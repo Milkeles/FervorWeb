@@ -1,7 +1,7 @@
 title: Web Design Class
 description: Front end website project for web design class using JS, HTML and CSS.
 theme: jekyll-theme-cayman
-baseurl: "/WebDesignClass"
+baseurl: "/FervorWeb"
 url: "https://milkeles.github.io"
 exclude:
   - site/
