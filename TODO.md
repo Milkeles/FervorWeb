@@ -23,17 +23,17 @@ Finished: 03/03/2026
 
 Started: 03/03/2026
 
-Finished: 08/08/2026
+Finished: 08/03/2026
 
 ### M3 - Pages
-- [ ] About Page
-- [ ] Services and Pricing Page
-- [ ] Previous Work / Clients page
+- [x] About Page
+- [x] Services and Pricing Page
+- [x] Previous Work / Clients page
 - [x] Contact Page
 
-Started: 08/08/2026
+Started: 08/03/2026
 
-Finished: - 
+Finished: 14/03/2026
 
 ### M4 - Polishing, Legal and Testing
 - [ ] Double-check translation and animations.

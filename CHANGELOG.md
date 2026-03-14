@@ -1,6 +1,23 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## [2.1.0] - 2026-03-14  
+**Milestone 3 (M3) – Pages**
+
+### Added
+- About Page with reusable sections and structured layout  
+- Services and Pricing Page with responsive cards and pricing tiers  
+- Previous Work / Clients Page with featured projects and client showcase  
+- Contact Page with functional contact form and responsive layout  
+
+### Changed
+- Minor layout and spacing adjustments across pages for consistency  
+- Improved navigation to include all newly added pages  
+- Updated Section and PageHero components to accommodate multiple page layouts  
+
+### Fixed
+- Resolved responsive issues on FeaturedProject components on smaller screens  
+- Adjusted font sizes and spacing for readability across pages  
 
 ## [2.0.0] - 2026-03-08
 **Milestone 2 (M2) – Landing Page**

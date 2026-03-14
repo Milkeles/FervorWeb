@@ -20,7 +20,7 @@
 - [Architectural Representation](#architectural-representation)
 - [Technology Stack](#technology-stack)
 - [Dependencies](#dependencies)
-- [Folder Structure](#folder-structure)
+- [Project Structure](#project-structure)
 ---
 
 ## Introduction
@@ -84,7 +84,8 @@ The Fervor Web website is built as a modern multi-page application, leveraging a
 - tailwindcss (^4.0.0) - Utility-first CSS framework
 - shadcn/ui (latest) - Accessible, unstyled component primitives
 
-## Folder Structure
+
+## Project Structure
 
 ### Root
 ```
