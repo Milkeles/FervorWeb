@@ -8,6 +8,7 @@ import { MediaCard } from '@/components/MediaCard'
 import Showcase1 from '@/assets/project-showcase-1.jpg?w=400;800;1200&format=avif;webp;jpg&as=picture'
 import Consultation from '@/assets/consultation.png?w=400;800;1200&format=avif;webp;jpg&as=picture'
 import Audit from '@/assets/audit.png?w=400;800;1200&format=avif;webp;jpg&as=picture'
+import Development from '@/assets/development.png?w=400;800;1200&format=avif;webp;jpg&as=picture'
 
 export default function Services() {
   const { t } = useTranslation()
@@ -71,7 +72,7 @@ export default function Services() {
           description={t('services.development.card.description')}
           href="/contact#contact-form"
           ctaLabel={t('services.cta')}
-          image={{ picture: Showcase1, alt: t('services.development.card.alt') }}
+          image={{ picture: Development, alt: t('services.development.card.alt') }}
         />
       </Section>
 
