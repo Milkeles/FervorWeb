@@ -53,10 +53,10 @@ export function Navbar() {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              <DropdownMenuItem onClick={() => i18n.changeLanguage('en')} aria-label={t('nav.switch-to-en')} lang="en">
+              <DropdownMenuItem onClick={() => {i18n.changeLanguage('en'); localStorage.setItem('fw-language', 'en')}} aria-label={t('nav.switch-to-en')} lang="en">
                 <span className="fi fi-gb mr-2" /> English
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => i18n.changeLanguage('bg')} aria-label={t('nav.switch-to-bg')} lang="bg">
+              <DropdownMenuItem onClick={() => {i18n.changeLanguage('bg'); localStorage.setItem('fw-language', 'bg')}} aria-label={t('nav.switch-to-bg')} lang="bg">
                 <span className="fi fi-bg mr-2" /> Български
               </DropdownMenuItem>
             </DropdownMenuContent>

@@ -9,12 +9,9 @@ i18n.use(initReactI18next).init({
     en: { translation: en },
     bg: { translation: bg }
   },
+  lng: localStorage.getItem('fw-language') ?? 'en',
   fallbackLng: 'en',
   interpolation: { escapeValue: false },
-  detection: {
-    order: ['localStorage', 'navigator'],
-    caches: ['localStorage'],
-  }
 })
 
 document.documentElement.lang = i18n.language;
