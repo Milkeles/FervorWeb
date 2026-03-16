@@ -226,5 +226,89 @@
       "optional": "optional",
       "submit": "Send Message"
     }
+  },
+  "privacy": {
+    "eyebrow": "Our",
+    "title": "Privacy Notice",
+    "description": "This privacy policy will explain how our organization uses the personal data we collect from you when you use our website.",
+
+    "section1": {
+      "title": "What data do we collect?",
+      "description": "Personal identification information (name, email address, phone number, website address) submitted through our contact form."
+    },
+
+    "section2": {
+      "title": "How do we collect your data?",
+      "description": "You directly provide Fervor Web with all data we collect. We collect data when you voluntarily complete and submit the contact form on our website."
+    },
+
+    "section3": {
+      "title": "How will we use your data?",
+      "description": "Fervor Web collects your data so that we can respond to your enquiry and discuss potential projects with you. We do not share your data with any third parties."
+    },
+
+    "section4": {
+      "title": "How do we store your data?",
+      "description": "Contact form submissions are sent directly to our email and are not stored in any database. We will retain your contact information only for as long as is necessary to handle your enquiry."
+    },
+
+    "section5": {
+      "title": "Marketing",
+      "description": "Fervor Web does not send marketing emails and does not share your data with any partner companies for marketing purposes."
+    },
+
+    "section6": {
+      "title": "What are your data protection rights?",
+      "description": {
+        "access": {
+          "title": "The right to access",
+          "definition": "You have the right to request copies of your personal data."
+        },
+        "rectification": {
+          "title": "The right to rectification",
+          "definition": "You have the right to request that we correct any information you believe is inaccurate or incomplete."
+        },
+        "erasure": {
+          "title": "The right to erasure",
+          "definition": "You have the right to request that we erase your personal data."
+        },
+        "restrict-processing": {
+          "title": "The right to restrict processing",
+          "definition": "You have the right to request that we restrict the processing of your personal data."
+        },
+        "object-processing": {
+          "title": "The right to object to processing",
+          "definition": "You have the right to object to our processing of your personal data."
+        },
+        "portability": {
+          "title": "The right to data portability",
+          "definition": "You have the right to request that we transfer your data to another organization or directly to you."
+        }
+      },
+      "contact": "If you make a request, we have one month to respond. To exercise any of these rights, please contact us at"
+    },
+    "section7": {
+      "title": "Cookies & Local Storage",
+      "description": "We use your browser's local storage to remember your preferred language and theme (light or dark mode) between visits. This data is stored only on your device and is never shared with third parties. You can clear it at any time through your browser settings, which will reset your preferences to their defaults."
+    },
+    "section8": {
+      "title": "Privacy policies of other websites",
+      "description": "Our website contains links to other websites, including client project links. Our privacy policy applies only to this website. If you follow a link to another website, please read their privacy policy."
+    },
+    "section9": {
+      "title": "Changes to our privacy policy",
+      "description": "Fervor Web keeps this privacy policy under regular review. Any updates will be posted on this page."
+    },
+    "section10": {
+      "title": "How to contact us",
+      "email": "Email:",
+      "address": "Address: z.k. Zdravets Sever-1, 12 Rodopi Street, 7005 Ruse. Bulgaria"
+    },
+    "section11": {
+      "title": "How to contact the appropriate authority",
+      "description": "Should you wish to report a complaint or if you feel we have not addressed your concern satisfactorily, you may contact the Commission for Personal Data Protection (CPDP) of Bulgaria.",
+      "site": "Website: ",
+      "address": "Address: 2 Prof. Tsvetal Lazarov boulevard, 1592 Sofia, Bulgaria"
+    }
   }
 }

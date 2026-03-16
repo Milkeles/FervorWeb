@@ -11,12 +11,17 @@ const About = lazy(() => import('./pages/About'))
 const Services = lazy(() => import("./pages/Services.tsx"))
 const Work = lazy(() => import("./pages/Work.tsx"))
 const Contact = lazy(() => import("./pages/Contact.tsx"))
+const Privacy = lazy(() => import("./pages/Privacy.tsx"))
 
 function Root() {
-  const [dark, setDark] = useState(true)
+  const [dark, setDark] = useState(() => {
+    const stored = localStorage.getItem('theme')
+    return stored ? stored === 'dark' : true
+  })
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark)
+    localStorage.setItem('theme', dark ? 'dark' : 'light') // add this
   }, [dark])
 
   const themeValue = useMemo(
@@ -36,6 +41,7 @@ function Root() {
                 <Route path="/services" element={<Services />} />
                 <Route path="/work" element={<Work />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/privacy" element={<Privacy />} />
               </Routes>
             </Suspense>
           </BrowserRouter>

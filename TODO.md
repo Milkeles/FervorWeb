@@ -40,10 +40,10 @@ Finished: 14/03/2026
 - [ ] Test (and fix) bugs.
 - [ ] Perform User Tests on people from different age groups.
 - [ ] Deploy Initial Release.
-- [ ] Theme and language cookies
+- [x] Theme and language storage
 - [ ] Cookie Consent Component
 - [ ] Legal Pages
 
-Started: -
+Started: 16/03/2026
 
 Finished: -

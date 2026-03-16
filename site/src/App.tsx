@@ -1,9 +1,7 @@
-import { useEffect } from 'react'
 import { Button } from "@/components/ui/Button"
 import { useTranslation } from 'react-i18next'
 import { ArrowRight, MessageCircle, Search, Code, Rocket } from 'lucide-react'
 import { Navbar } from "@/components/Navbar"
-import { useTheme } from '@/context/theme-context'
 import { Footer } from '@/components/Footer'
 import { CardGrid } from '@/components/CardGrid';
 import { Section } from "@/components/Section"
@@ -20,11 +18,11 @@ import HeroImage from '@/assets/hero-image.jpg?w=256;320;640&format=avif;webp;jp
 import { useInView } from 'react-intersection-observer'
 
 function App() {
-  const { dark } = useTheme()
+  // const { dark } = useTheme()
 
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', dark)
-  }, [dark])
+  // useEffect(() => {
+  //   document.documentElement.classList.toggle('dark', dark)
+  // }, [dark])
 
   const { t /*, i18n */ } = useTranslation()
   const { ref, inView } = useInView({ triggerOnce: true })
