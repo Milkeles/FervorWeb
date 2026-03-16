@@ -315,5 +315,50 @@
     "minimal-body": "We use cookies to enhance your browsing experience.",
     "notice": "Cookie Notice",
     "privacy-link": "/privacy"
+  },
+  "terms": {
+    "eyebrow": "Legal",
+    "title": "Terms of Service",
+    "last-updated": "Last updated: March 2026",
+    "sections": {
+      "agreement": {
+        "title": "1. Agreement to Terms",
+        "body": "By accessing or using the Fervor Web website, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website."
+      },
+      "services": {
+        "title": "2. Services",
+        "body": "Fervor Web provides web design, development, consultation, and audit services. The details, scope, and pricing of any services provided to a client will be agreed upon separately in writing before work begins. These terms govern your use of our website only and do not constitute a service agreement."
+      },
+      "ip": {
+        "title": "3. Intellectual Property",
+        "body": "All content on this website, including text, graphics, logos, and code — excluding linked third-party and client websites — is the property of Fervor Web and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from any such content without our prior written consent."
+      },
+      "client-work": {
+        "title": "4. Client Work",
+        "body": "Project showcases and client work displayed on this website are shown with the permission of the respective clients. All intellectual property rights for client projects remain with the client upon full payment, unless otherwise agreed in writing."
+      },
+      "liability": {
+        "title": "5. Limitation of Liability",
+        "body": "Fervor Web will not be liable for any indirect, incidental, or consequential damages arising from your use of this website or our services. Our total liability for any claim arising from our services shall not exceed the amount paid by the client for the specific service in question."
+      },
+      "links": {
+        "title": "6. External Links",
+        "body": "Our website contains links to third-party websites, including client projects. These links are provided for reference only. Fervor Web has no control over the content of those sites and accepts no responsibility for them or for any loss or damage that may arise from your use of them."
+      },
+      "law": {
+        "title": "7. Governing Law",
+        "body": "These terms are governed by the laws of the Republic of Bulgaria. Any disputes arising from these terms or your use of this website shall be subject to the exclusive jurisdiction of the courts of Ruse, Bulgaria."
+      },
+      "changes": {
+        "title": "8. Changes to These Terms",
+        "body": "Fervor Web reserves the right to update these terms at any time. Changes will be posted on this page with an updated date. Your continued use of the website after any changes constitutes your acceptance of the new terms."
+      },
+      "contact": {
+        "title": "9. Contact",
+        "intro": "If you have any questions about these terms, please contact us:",
+        "email": "hristo@fervorgames.com",
+        "address": "Address: z.k. Zdravets Sever-1, 12 Rodopi Street, 7005 Ruse. Bulgaria"
+      }
+    }
   }
 }

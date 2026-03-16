@@ -13,6 +13,7 @@ const Services = lazy(() => import("./pages/Services.tsx"))
 const Work = lazy(() => import("./pages/Work.tsx"))
 const Contact = lazy(() => import("./pages/Contact.tsx"))
 const Privacy = lazy(() => import("./pages/Privacy.tsx"))
+const Terms = lazy(() => import("./pages/Terms.tsx"))
 
 function Root() {
   const [dark, setDark] = useState(() => {
@@ -44,6 +45,7 @@ function Root() {
                 <Route path="/work" element={<Work />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/privacy" element={<Privacy />} />
+                <Route path="/terms" element={<Terms />} />
               </Routes>
             </Suspense>
           </BrowserRouter>
