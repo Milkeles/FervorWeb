@@ -4,12 +4,20 @@ import { initReactI18next } from 'react-i18next'
 import en from './locales/en/translation.json'
 import bg from './locales/bg/translation.json'
 
+const savedLanguage = (() => {
+  try {
+    return localStorage.getItem('fw-language') ?? 'en'
+  } catch {
+    return 'en'
+  }
+})()
+
 i18n.use(initReactI18next).init({
   resources: {
     en: { translation: en },
     bg: { translation: bg }
   },
-  lng: localStorage.getItem('fw-language') ?? 'en',
+  lng: savedLanguage,
   fallbackLng: 'en',
   interpolation: { escapeValue: false },
 })
