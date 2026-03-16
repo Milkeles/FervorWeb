@@ -23,17 +23,3 @@ export const Default: Story = {
     mode: true,
   },
 }
-
-export const Small: Story = {
-  args: {
-    variant: 'small',
-    mode: true,
-  },
-}
-
-export const Minimal: Story = {
-  args: {
-    variant: 'minimal',
-    mode: true,
-  },
-}
