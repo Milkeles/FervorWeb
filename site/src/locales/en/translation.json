@@ -231,32 +231,26 @@
     "eyebrow": "Our",
     "title": "Privacy Notice",
     "description": "This privacy policy will explain how our organization uses the personal data we collect from you when you use our website.",
-
     "section1": {
       "title": "What data do we collect?",
       "description": "Personal identification information (name, email address, phone number, website address) submitted through our contact form."
     },
-
     "section2": {
       "title": "How do we collect your data?",
       "description": "You directly provide Fervor Web with all data we collect. We collect data when you voluntarily complete and submit the contact form on our website."
     },
-
     "section3": {
       "title": "How will we use your data?",
       "description": "Fervor Web collects your data so that we can respond to your enquiry and discuss potential projects with you. We do not share your data with any third parties."
     },
-
     "section4": {
       "title": "How do we store your data?",
       "description": "Contact form submissions are sent directly to our email and are not stored in any database. We will retain your contact information only for as long as is necessary to handle your enquiry."
     },
-
     "section5": {
       "title": "Marketing",
       "description": "Fervor Web does not send marketing emails and does not share your data with any partner companies for marketing purposes."
     },
-
     "section6": {
       "title": "What are your data protection rights?",
       "description": {
@@ -310,5 +304,16 @@
       "site": "Website: ",
       "address": "Address: 2 Prof. Tsvetal Lazarov boulevard, 1592 Sofia, Bulgaria"
     }
+  },
+  "cookie-consent": {
+    "title": "We use cookies",
+    "body": "We use cookies to ensure you get the best experience on our website. For more information on how we use cookies, please see our cookie policy.",
+    "accept-note": "By clicking <bold>Accept</bold>, you agree to our use of cookies.",
+    "learn-more": "Learn more.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "minimal-body": "We use cookies to enhance your browsing experience.",
+    "notice": "Cookie Notice",
+    "privacy-link": "/privacy"
   }
 }
