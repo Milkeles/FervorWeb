@@ -9,6 +9,7 @@ permalink: /docs/
 [![License: MIT](https://img.shields.io/github/license/Milkeles/FervorWeb)](LICENSE)
 [![Issues](https://img.shields.io/github/issues/Milkeles/FervorWeb)](https://github.com/Milkeles/FervorWeb/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/Milkeles/FervorWeb)](https://github.com/Milkeles/FervorWeb/pulls)
+[![Version](https://img.shields.io/github/v/tag/Milkeles/FervorWeb?label=version)](https://github.com/Milkeles/FervorWeb/releases/latest)
 
 ## Table of Contents
 - [Introduction](#introduction)
