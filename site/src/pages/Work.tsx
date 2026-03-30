@@ -20,7 +20,7 @@ interface WorkCardProps {
   alt: string
 }
 
-function WorkCard({ title, description, href, picture, alt }: WorkCardProps) {
+function WorkCard({ title, description, href, picture, alt }: Readonly<WorkCardProps>) {
   return (
     <Card className="flex flex-col overflow-hidden p-0 h-full">
       <div className="aspect-video overflow-hidden ">
@@ -29,7 +29,7 @@ function WorkCard({ title, description, href, picture, alt }: WorkCardProps) {
             ? picture.sources
             : Object.entries(picture.sources).map(([format, srcset]) => ({
                 type: `image/${format}`,
-                srcset: srcset as string,
+                srcset: srcset,
               }))
           ).map(({ srcset, type }) => (
             <source key={type} srcSet={srcset} type={type} sizes="(max-width: 640px) 100vw, 400px" />

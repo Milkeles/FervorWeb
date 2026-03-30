@@ -36,13 +36,14 @@ Started: 08/03/2026
 Finished: 14/03/2026
 
 ### M4 - Polishing, Legal and Testing
+- [x] Fix routing bug
 - [x] Double-check translation and animations.
 - [ ] Test (and fix) bugs.
 - [ ] Perform User Tests on people from different age groups.
 - [ ] Deploy Initial Release.
 - [x] Theme and language storage
 - [x] Cookie Consent Component
-- [ ] Legal Pages
+- [x] Legal Pages
 
 Started: 16/03/2026
 

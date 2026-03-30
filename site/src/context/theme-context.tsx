@@ -10,4 +10,5 @@ export const ThemeContext = createContext<ThemeContextType>({
   toggleDark: () => {},
 })
 
+
 export const useTheme = () => useContext(ThemeContext)
